@@ -40,7 +40,7 @@ The app is expected to be available for public download access in the near futur
 RealView is an app which allows users to customize and place 3-Dimensional Models of Objects in their real environment and interact with them in innovative ways. The app allows users to move, resize, and rotate objects using intuitive touch-screen gesture input, as well as edit the texture of the object according to the user's preference.
 
 # Tools Utilized:
-__Given that this project is a means for me to learn iOS App Development and become acquainted with Swift and SwiftUI, I decided to make this section to document the tools and skills I learn as I implement them in the program.__ <br>
+__Given that this project is a means for me to learn iOS App Development and become acquainted with RealityKit, I decided to make this section to document the tools and skills I learn as I implement them in the program.__ <br>
 
 __Views, Stacks, Text, and Images__ <br>
 I implemented a basic homepage view with a background color, as well as text, images, and text fields to create a user-interface for prompting the user for inputting data and collecting that data. 
