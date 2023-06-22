@@ -5,7 +5,7 @@
  	<br>
 	<a href="">
 		<img 
-		     src="https://github.com/VirBhatia10/Codeword-AppDevLearning/assets/136326184/e62896bc-4511-4ee6-a4e4-e59c25e24592" 
+		     src="https://github.com/VirBhatia10/3DAppDev/blob/main/TestAR/Resources/Assets/appstore.png?raw=true" 
 		     alt="Codeword iOS">
 	</a>
 </h1>
