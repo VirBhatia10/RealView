@@ -7,13 +7,14 @@
 
 import Foundation
 import RealityKit
-
+import FocusEntity
 
 struct EntityView: Identifiable {
     var id = UUID()
-    var mesh: MeshResource
-    var material: SimpleMaterial
-    var meshSize: Float
+    var customARView: ARView
+    var currModel: ModelEntity
+    var currAnchor: AnchorEntity
+    var focusEntity: FocusEntity
     
     
 }
