@@ -1,5 +1,5 @@
 # 3DAppDev
- Learning 3D App Development with RealityKit
+An app that allows you to view 3D objects in your actual environment in realtime.
  
 <h1 align="center">
  	<br>
