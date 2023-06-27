@@ -15,8 +15,8 @@ An app that allows you to view 3D objects in your actual environment in realtime
 <p align="center">
   <a href="#development">Development</a> •
   <a href="#downloading">Downloading</a> •
-  <a href="#frameworks utilized">Frameworks_Utilized</a> •
-  <a href="#how it works">How_it_Works</a> •
+  <a href="#frameworks utilized">Frameworks Utilized</a> •
+  <a href="#how it works">How it Works</a> •
   <a href="#issues">Issues</a> •
   <a href="#support">Support</a>
 </p>
