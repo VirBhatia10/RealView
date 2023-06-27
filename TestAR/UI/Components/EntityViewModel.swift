@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftUI
 import RealityKit
 import FocusEntity
 import RealityUI
@@ -14,53 +13,57 @@ import RealityUI
 class EntityVM: ObservableObject {
     
     var customARView = ARView(frame: .infinite)
-    var currModel: ModelEntity?
+    var currModel: Entity?
     var currAnchor: AnchorEntity = AnchorEntity(plane: .horizontal)
     var focusEntity: FocusEntity!
     
-    var currObject: ObjectModel?
-//    = ObjectModel(Model: try!
-//                                              ModelEntity.loadModel(named: "chair_swan"),
-//                                              Entity: Entity(),
-//                                              Appearance:
+//    var currObject = ObjectModel(
+//        model: try! ModelEntity.loadModel(named: "chair_swan"),
+//        entity: ModelEntity(),
+//        appearance: SimpleMaterial()
+//    )
     
     
-    func confirmObject(){
-        
-        focusEntity.destroy()
-        
-        currAnchor.transform = focusEntity.transform
-        currModel!.generateCollisionShapes(recursive: true)
-        currAnchor.addChild(currModel!)
-        customARView.scene.anchors.append(currAnchor)
-        customARView.installGestures([.rotation, .scale, .translation], for: currModel!)
-        
-        currAnchor = AnchorEntity(plane: .horizontal)
-    }
-    
-    func modelChanger(modelCode: String) {
-        
+    func modelPicker(modelName: String, entityName: String) {
         focusEntity = FocusEntity(on: customARView, style: .classic(color: .purple))
-
+        
         if !customARView.scene.anchors.isEmpty {
-            currAnchor.removeChild(currModel!)
+            //            currAnchor.removeChild(currObject!.model)
             customARView.scene.anchors.remove(currAnchor)
         }
         
-        if modelCode == "chair" {
-            currModel = try!
-            ModelEntity.loadModel(named: "chair_swan")
-        }
-        else if modelCode == "gramophone" {
-            currModel = try!
-                ModelEntity.loadModel(named: "gramophone.usdz")
-        }
-        else {
-            currModel = try!
-                ModelEntity.loadModel(named: "toy_biplane_idle.usdz")
-        }
+        currModel = try! Entity.load(named: modelName)
+        
+        let entity = currModel?.findEntity(named: entityName) as! ModelEntity
+        
+        entity.model?.materials[0] = SimpleMaterial(color: .blue, isMetallic: false)
+        
     }
+    
+    func confirmObject(){
+        focusEntity.destroy()
+        currAnchor.transform = focusEntity.transform
+        
+        let parentEntity = ModelEntity()
+        parentEntity.addChild(currModel!)
+        
+        let entityBounds = currModel?.visualBounds(relativeTo: parentEntity)
+        parentEntity.collision = CollisionComponent(shapes: [ShapeResource.generateBox(size: entityBounds!.extents).offsetBy(translation: entityBounds!.center)])
+        
+        currAnchor.addChild(parentEntity)
+        
+        customARView.scene.anchors.append(currAnchor)
+        customARView.installGestures([.rotation, .scale, .translation], for: parentEntity)
+
+        currAnchor = AnchorEntity(plane: .horizontal)
+    }
+    
+    
+
+    
 }
+
+    
 
 
 

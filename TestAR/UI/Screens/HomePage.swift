@@ -54,7 +54,7 @@ struct objectPickerView : View {
             Spacer()
             
             Button {
-                entity.modelChanger(modelCode: "chair")
+                entity.modelPicker(modelName: "chair_swan", entityName: "RedChairSeat")
                 bottomBarViewState.toggle()
             } label: {
                 Image("chairThumbnail")
@@ -65,7 +65,7 @@ struct objectPickerView : View {
             }
             
             Button {
-                entity.modelChanger(modelCode: "gramophone")
+                entity.modelPicker(modelName: "gramophone", entityName: "GramophoneBoxBody")
                 bottomBarViewState.toggle()
             } label: {
                 Image("gramophoneThumbnail")
@@ -76,7 +76,7 @@ struct objectPickerView : View {
             }
             
             Button {
-                entity.modelChanger(modelCode: "plane")
+                entity.modelPicker(modelName: "toy_biplane_idle", entityName: "wings")
                 bottomBarViewState.toggle()
             } label: {
                 Image("planeThumbnail")

@@ -8,9 +8,8 @@
 import Foundation
 import RealityKit
 
-struct ObjectModel: Identifiable {
-    var id = UUID()
-    var Model: ModelEntity
-    var Entity: Entity
-    var Appearance: [Material]
+struct ObjectModel {
+    var model: Entity
+    var entity: Entity
+    var appearance: Material
 }

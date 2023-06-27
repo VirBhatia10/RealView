@@ -21,6 +21,7 @@
 		6FA216FE2A44224900EFEE31 /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 6FA216FD2A44224900EFEE31 /* chair_swan.usdz */; };
 		6FA217012A444CDF00EFEE31 /* RealityUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6FA217002A444CDF00EFEE31 /* RealityUI */; };
 		6FA217032A49527C00EFEE31 /* ObjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA217022A49527C00EFEE31 /* ObjectModel.swift */; };
+		6FA217052A4AB33C00EFEE31 /* drawers.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 6FA217042A4AB33C00EFEE31 /* drawers.usdz */; };
 		6FF740A72A3C7D9300AC294C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF740A62A3C7D9300AC294C /* AppDelegate.swift */; };
 		6FF740A92A3C7D9300AC294C /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF740A82A3C7D9300AC294C /* HomePage.swift */; };
 		6FF740AB2A3C7D9300AC294C /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 6FF740AA2A3C7D9300AC294C /* Experience.rcproject */; };
@@ -61,6 +62,7 @@
 		6FA216F92A4315DC00EFEE31 /* chairThumbnail.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chairThumbnail.jpeg; sourceTree = "<group>"; };
 		6FA216FD2A44224900EFEE31 /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_swan.usdz; sourceTree = "<group>"; };
 		6FA217022A49527C00EFEE31 /* ObjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectModel.swift; sourceTree = "<group>"; };
+		6FA217042A4AB33C00EFEE31 /* drawers.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = drawers.usdz; sourceTree = "<group>"; };
 		6FF740A32A3C7D9300AC294C /* TestAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF740A62A3C7D9300AC294C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FF740A82A3C7D9300AC294C /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		6F385E4A2A42BA55009687F0 /* ARModels */ = {
 			isa = PBXGroup;
 			children = (
+				6FA217042A4AB33C00EFEE31 /* drawers.usdz */,
 				6FA216FD2A44224900EFEE31 /* chair_swan.usdz */,
 				6F385E532A42BC5A009687F0 /* gramophone.usdz */,
 				6F385E522A42BC59009687F0 /* toy_biplane_idle.usdz */,
@@ -346,6 +349,7 @@
 				6F385E552A42BC5A009687F0 /* toy_biplane_idle.usdz in Resources */,
 				6FF740B02A3C7D9900AC294C /* Preview Assets.xcassets in Resources */,
 				6FF740AD2A3C7D9900AC294C /* Assets.xcassets in Resources */,
+				6FA217052A4AB33C00EFEE31 /* drawers.usdz in Resources */,
 				6FA216FC2A4315DC00EFEE31 /* chairThumbnail.jpeg in Resources */,
 				6F385E4F2A42BA86009687F0 /* hab_en.reality in Resources */,
 				6FA216FA2A4315DC00EFEE31 /* gramophoneThumbnail.jpeg in Resources */,
