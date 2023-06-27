@@ -15,8 +15,8 @@
 <p align="center">
   <a href="#development">Development</a> •
   <a href="#downloading">Downloading</a> •
-  <a href="#frameworks_utilized">Frameworks Utilized</a> •
-  <a href="#how_it_works">How it Works</a> •
+  <a href="#frameworks utilized">Frameworks Utilized</a> •
+  <a href="#how it works">How it Works</a> •
   <a href="#issues">Issues</a> •
   <a href="#support">Support</a>
 </p>
