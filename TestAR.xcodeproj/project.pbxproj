@@ -206,10 +206,10 @@
 		6FF7409A2A3C7D9300AC294C = {
 			isa = PBXGroup;
 			children = (
+				6FF740A42A3C7D9300AC294C /* Products */,
 				6FF740A52A3C7D9300AC294C /* TestAR */,
 				6FF740B82A3C7D9A00AC294C /* TestARTests */,
 				6FF740C22A3C7D9A00AC294C /* TestARUITests */,
-				6FF740A42A3C7D9300AC294C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
