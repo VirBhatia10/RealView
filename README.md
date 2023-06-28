@@ -1,5 +1,5 @@
 # RealView
-An app that allows you to view 3D objects in your actual environment in realtime.
+An app that allows you to place and customize 3D objects in your actual environment in realtime.
  
 <h1 align="center">
  	<br>
