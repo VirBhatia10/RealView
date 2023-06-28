@@ -45,7 +45,7 @@ In the near future, the following implementations and optimizations can be expec
 - Focus Entity customizability allowing users to edit shape, color, etc. of object placement indicator.
 - Object deletion
 - Additional color options, as well as other material customizability options for objects.
-- Implementation of 'RealityUI' frameork, via which users will be able to customize objects using intuitive 3-Dimentional UI features in 
+- Implementation of 'RealityUI' framework, via which users will be able to customize objects using intuitive 3-Dimentional UI features in 
   realtime
 
 # Issues
