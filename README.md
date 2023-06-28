@@ -35,13 +35,13 @@ The app is expected to be available for public download access in the near futur
 - RealityKit
 - SwiftUI
 
-
 # How it Works
 RealView is an app which allows users to customize and place 3-Dimensional Models of Objects in their real environment and interact with them in innovative ways. The app allows users to move, resize, and rotate objects using intuitive touch-screen gesture input, as well as edit the texture of the object according to the user's preference.
 
 # RoadMap
 In the near future, the following implementations and optimizations can be expected for RealView:
 - Object placement tracking UI, which provides information to users about location and quantity of placed objects.
+- Additional object options, including objects which may be placed on vertical planes.
 - Focus Entity customizability allowing users to edit shape, color, etc. of object placement indicator.
 - Object deletion
 - Additional color options, as well as other material customizability options for objects.
