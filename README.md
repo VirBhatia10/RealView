@@ -17,7 +17,7 @@ An app that allows you to view 3D objects in your actual environment in realtime
   <a href="#downloading">Downloading</a> •
   <a href="#frameworks-utilized">Frameworks Utilized</a> •
   <a href="#how-it-works">How it Works</a> •
-  <a href="#roadmap">Roadmap,/a> • 
+  <a href="#roadmap">Roadmap</a> • 
   <a href="#issues">Issues</a> •
   <a href="#support">Support</a>
 </p>
@@ -34,7 +34,6 @@ The app is expected to be available for public download access in the near futur
 - SwiftUI
 - RealityKit
 - FocusEntity
-- RealityUI
 
 # How it Works
 RealView is an app which allows users to customize and place 3-Dimensional Models of Objects in their real environment and interact with them in innovative ways. The app allows users to move, resize, and rotate objects using intuitive touch-screen gesture input, as well as edit the texture of the object according to the user's preference.
