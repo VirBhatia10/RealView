@@ -10,7 +10,7 @@ import FocusEntity
 
 
 struct CreateObjectView : View {
-    @Binding var entity: EntityViewModel
+    @EnvironmentObject var entity: EntityViewModel
     @Binding var bottomBarViewState: BottomNavState
 
     var body: some View {

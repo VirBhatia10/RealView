@@ -6,11 +6,12 @@
 
 import Foundation
 import RealityKit
+import ARKit
 import FocusEntity
 
-class EntityViewModel: ObservableObject {
+class EntityViewModel: NSObject, ARSessionDelegate, ObservableObject {
     
-    private var customARView = ARView(frame: .infinite)
+    var customARView = ARView(frame: .infinite)
     private var currAnchor: AnchorEntity = AnchorEntity(plane: .horizontal)
     private var focusEntity: FocusEntity!
     private var currObject = ObjectModel (
@@ -18,8 +19,8 @@ class EntityViewModel: ObservableObject {
         entity: ModelEntity()
     )
     
-    func loadARView()->ARView {
-        return customARView
+    func loadARView() {
+        customARView.session.delegate = self
     }
     
     func destroyFocusEntity() {
@@ -29,9 +30,11 @@ class EntityViewModel: ObservableObject {
     func modelPicker(modelName: String, entityName: String) {
         currObject.model = try! Entity.load(named: modelName)
         currObject.entity = currObject.model.findEntity(named: entityName) as! ModelEntity
+        print("Works")
     }
     
     func materialPicker(entityMaterial: Material) {
+        print("materialpicker button pressed")
         focusEntity = FocusEntity(on: customARView, style: .classic(color: .purple))
 
         currObject.entity.model?.materials[0] = entityMaterial
@@ -53,6 +56,7 @@ class EntityViewModel: ObservableObject {
 
         currAnchor = AnchorEntity(plane: .horizontal)
     }
+
 }
 
     

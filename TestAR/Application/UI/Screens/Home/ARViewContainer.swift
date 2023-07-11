@@ -8,10 +8,11 @@ import SwiftUI
 import RealityKit
 
 struct ARViewContainer: UIViewRepresentable {
-    @Binding var entity: EntityViewModel
+    var entity: EntityViewModel
     
     func makeUIView(context: Context) -> ARView {
-        return entity.loadARView()
+        entity.loadARView()
+        return entity.customARView
     }
 
     func updateUIView(_ uiView: ARView, context: Context) {}

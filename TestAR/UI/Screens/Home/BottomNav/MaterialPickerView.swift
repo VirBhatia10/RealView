@@ -6,10 +6,9 @@
 
 import SwiftUI
 import RealityKit
-import FocusEntity
 
 struct MaterialPickerView : View {
-    @Binding var entity: EntityViewModel
+    @EnvironmentObject var entity: EntityViewModel
     @Binding var bottomBarViewState: BottomNavState
 
     var body: some View {
@@ -26,11 +25,11 @@ struct MaterialPickerView : View {
             HStack {
                 Spacer()
                 
-                ForEach(colors, id: \.self.id) { color in
-                    Button {
+                ForEach(colors, id: \.id) { color in
+                    Button(action: {
                         entity.materialPicker(entityMaterial: SimpleMaterial(color: color.color, isMetallic: false))
                         bottomBarViewState = .createObject
-                    } label: {
+                    }, label: {
                         Circle()
                             .fill(.white)
                             .frame(width: 70)
@@ -39,8 +38,10 @@ struct MaterialPickerView : View {
                                     .foregroundColor(Color(color.color))
                                     .frame(width: 60)
                             )
-                    }
+                    })
+                    
                 }
+                
                 Spacer()
             }
             .padding(15)

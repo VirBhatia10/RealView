@@ -10,6 +10,9 @@
 		6F385E472A4160F3009687F0 /* EntityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F385E462A4160F3009687F0 /* EntityViewModel.swift */; };
 		6F385E562A42BC5A009687F0 /* Gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 6F385E532A42BC5A009687F0 /* Gramophone.usdz */; };
 		6F385E592A42FA64009687F0 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 6F385E582A42FA64009687F0 /* FocusEntity */; };
+		6F461E932A53E21B00640C99 /* CameraPositionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F461E922A53E21A00640C99 /* CameraPositionModel.swift */; };
+		6F461E952A55413900640C99 /* Arrow.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 6F461E942A55413800640C99 /* Arrow.usdz */; };
+		6F461E972A55414C00640C99 /* ArrowThumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F461E962A55414C00640C99 /* ArrowThumbnail.png */; };
 		6FA216FA2A4315DC00EFEE31 /* GramophoneThumbnail.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6FA216F72A4315DC00EFEE31 /* GramophoneThumbnail.jpeg */; };
 		6FA216FC2A4315DC00EFEE31 /* ChairThumbnail.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6FA216F92A4315DC00EFEE31 /* ChairThumbnail.jpeg */; };
 		6FA216FE2A44224900EFEE31 /* ChairSwan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 6FA216FD2A44224900EFEE31 /* ChairSwan.usdz */; };
@@ -52,6 +55,9 @@
 /* Begin PBXFileReference section */
 		6F385E462A4160F3009687F0 /* EntityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityViewModel.swift; sourceTree = "<group>"; };
 		6F385E532A42BC5A009687F0 /* Gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Gramophone.usdz; sourceTree = "<group>"; };
+		6F461E922A53E21A00640C99 /* CameraPositionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPositionModel.swift; sourceTree = "<group>"; };
+		6F461E942A55413800640C99 /* Arrow.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Arrow.usdz; sourceTree = "<group>"; };
+		6F461E962A55414C00640C99 /* ArrowThumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ArrowThumbnail.png; sourceTree = "<group>"; };
 		6FA216F72A4315DC00EFEE31 /* GramophoneThumbnail.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GramophoneThumbnail.jpeg; sourceTree = "<group>"; };
 		6FA216F92A4315DC00EFEE31 /* ChairThumbnail.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ChairThumbnail.jpeg; sourceTree = "<group>"; };
 		6FA216FD2A44224900EFEE31 /* ChairSwan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = ChairSwan.usdz; sourceTree = "<group>"; };
@@ -132,6 +138,7 @@
 		6F385E4A2A42BA55009687F0 /* ARModels */ = {
 			isa = PBXGroup;
 			children = (
+				6F461E942A55413800640C99 /* Arrow.usdz */,
 				6FA217152A4AF6F100EFEE31 /* WateringCan.usdz */,
 				6FA216FD2A44224900EFEE31 /* ChairSwan.usdz */,
 				6F385E532A42BC5A009687F0 /* Gramophone.usdz */,
@@ -142,6 +149,7 @@
 		6FA216F62A4315A100EFEE31 /* ModelThumbnails */ = {
 			isa = PBXGroup;
 			children = (
+				6F461E962A55414C00640C99 /* ArrowThumbnail.png */,
 				6FA217132A4AF3EF00EFEE31 /* WateringCanThumbnail.jpg */,
 				6FA216F92A4315DC00EFEE31 /* ChairThumbnail.jpeg */,
 				6FA216F72A4315DC00EFEE31 /* GramophoneThumbnail.jpeg */,
@@ -155,6 +163,7 @@
 				6FA217072A4AE46E00EFEE31 /* BottomNavState.swift */,
 				6FA2170F2A4AEFD400EFEE31 /* ColorModel.swift */,
 				6FA217022A49527C00EFEE31 /* ObjectModel.swift */,
+				6F461E922A53E21A00640C99 /* CameraPositionModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -381,6 +390,8 @@
 				6FF740AD2A3C7D9900AC294C /* Assets.xcassets in Resources */,
 				6FA216FC2A4315DC00EFEE31 /* ChairThumbnail.jpeg in Resources */,
 				6FA216FA2A4315DC00EFEE31 /* GramophoneThumbnail.jpeg in Resources */,
+				6F461E972A55414C00640C99 /* ArrowThumbnail.png in Resources */,
+				6F461E952A55413900640C99 /* Arrow.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F461E932A53E21B00640C99 /* CameraPositionModel.swift in Sources */,
 				6FA217232A4B06D700EFEE31 /* ModelPickerView.swift in Sources */,
 				6FA217292A4B077100EFEE31 /* HomePage.swift in Sources */,
 				6FA217222A4B06D700EFEE31 /* MaterialPickerView.swift in Sources */,

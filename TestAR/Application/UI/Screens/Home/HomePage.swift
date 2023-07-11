@@ -7,25 +7,31 @@
 import SwiftUI
 
 struct HomePage : View {
-    @State var entity = EntityViewModel()
+    @StateObject var entity = EntityViewModel()
     @State var bottomBarViewState: BottomNavState = .modelPicker
     
     var body: some View {
         ZStack {
-            ARViewContainer(entity: $entity)
+            ARViewContainer(entity: entity)
             
             VStack {
+                
                 Spacer()
+                
                 if bottomBarViewState == .modelPicker {
-                    ModelPickerView(entity: $entity, bottomBarViewState: $bottomBarViewState)
+                    ModelPickerView(bottomBarViewState: $bottomBarViewState)
+                        .environmentObject(entity)
                 }
                 else if bottomBarViewState == .materialPicker {
-                    MaterialPickerView(entity: $entity, bottomBarViewState: $bottomBarViewState)
+                    MaterialPickerView(bottomBarViewState: $bottomBarViewState)
+                        .environmentObject(entity)
                 }
                 else {
-                    CreateObjectView(entity: $entity, bottomBarViewState: $bottomBarViewState)
+                    CreateObjectView(bottomBarViewState: $bottomBarViewState)
+                        .environmentObject(entity)
                 }
             }
         }
+        .ignoresSafeArea()
     }
 }
