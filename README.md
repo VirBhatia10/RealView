@@ -6,7 +6,7 @@ An app that allows you to place and customize 3D objects in your actual environm
 	<a href="">
 		<img 
 		     src="https://github.com/VirBhatia10/3DAppDev/blob/main/TestAR/Resources/Assets/appstore.png?raw=true" 
-		     alt="Codeword iOS">
+		     alt="RealView iOS">
 	</a>
 </h1>
 
